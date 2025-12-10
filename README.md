@@ -3,11 +3,11 @@
 
 À compléter :
 
-- NOM :
-- PRÉNOM :
-- GROUPE :
+- NOM :Thiriet
+- PRÉNOM :Izya
+- GROUPE :C2
 - URL du site :
-- URL FIGMA :
+- URL FIGMA :https://www.figma.com/design/RAGJ6TJ57lOPEqripgMyzK/maquette-SAE-105-SavouFest-?node-id=0-1&t=cUoXNoo1vNGTPIQ9-1 
 
 ## Sujet
 
