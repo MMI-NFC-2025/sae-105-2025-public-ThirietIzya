@@ -68,19 +68,36 @@
                         Formulaire de contact
                     </h2>
                 </section>
-                <section class="section__formulaire-contact">
-                    <p class="formulaire-contact__texte">
-                        Prénom <br>
-                        Nom <br>
-                        E-mail <br>
-                        Objet <br>
-                        Message <br>
-                        Votre message...
-                    </p>
-                </section>
-                <button class="formulaire-contact__bouton-envoyer" type="submit">
-                    J'envoie le message
-                </button>
+                <form class="section__formulaire-contact" action="#" method="POST">
+                    <div class="formulaire-contact__groupe">
+                        <label for="prenom">Prénom</label>
+                        <input type="text" id="prenom" name="prenom" required>
+                    </div>
+    
+                    <div class="formulaire-contact__groupe">
+                        <label for="nom">Nom</label>
+                        <input type="text" id="nom" name="nom" required>
+                    </div>
+    
+                    <div class="formulaire-contact__groupe">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+    
+                    <div class="formulaire-contact__groupe">
+                        <label for="objet">Objet</label>
+                        <input type="text" id="objet" name="objet" required>
+                    </div>
+    
+                    <div class="formulaire-contact__groupe">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Votre message..." rows="5" required></textarea>
+                    </div>
+    
+                    <button class="formulaire-contact__bouton-envoyer" type="submit">
+                        J'envoie le message
+                    </button>
+                </form>
                 <section class="section__coordonnees">
                     <h3 class="coordonnees__titre3">
                         COORDONNEES
@@ -111,7 +128,7 @@
             src="/assets/icons/icon_logo.svg"
             alt="Logo SavouFest'" />
             </a>
-            <ul class="texte__footer">
+            <ul class="footer__list">
                 <li>
                     <a class="texte__footer" href="festival.html">LE FESTIVAL</a>
                 </li>
@@ -125,7 +142,7 @@
             <h3 class="titre__footer">
                 CONTACT
             </h3>
-            <p class="texte__footer">
+            <p class="texte2__footer">
                 savoufest@gmail.com <br>
                 09.78.43.99.13 <br>
                 25200 Montbéliard <br>
@@ -139,7 +156,7 @@
             <a href="https://www.twitter.com/"><img class="social__icon" src="/assets/icons/icon_twitter.svg" alt="twitter logo"></a>
             <a href="https://www.youtube.com/"><img class="social__icon" src="/assets/icons/icon_youtube.svg" alt="youtube logo"></a>
             </div> 
-            <p class="texte__footer">
+            <p class="texte3__footer">
                 Site officiel du festival SavouFest’
             </p>
         </footer>
