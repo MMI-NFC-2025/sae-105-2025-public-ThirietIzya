@@ -40,6 +40,7 @@ footer {
   color: #7b7371;
 }
 
-.social__icon {
-  
+.social__media {
+  display: flex;
+  gap: 16px;
 }
