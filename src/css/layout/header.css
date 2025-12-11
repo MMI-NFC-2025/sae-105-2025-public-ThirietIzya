@@ -31,12 +31,13 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* Espacement uniforme entre les barres */
-    cursor: pointer;
-
+    cursor: pointer;  
     margin-top: 38px;         /* distance avec le haut du header */
     margin-right: 31px;       /* distance avec le bord droit */
     margin-bottom: 33px;      /* distance avec le bas */
     margin-left: 0;
+    background: none;
+    border: none;
 }
 
 .menu-button__bar {
