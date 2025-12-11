@@ -35,3 +35,11 @@ footer {
   margin-bottom: 4px;
 }
 
+.titre__footer {
+  font-family: var(--string-2);
+  color: #7b7371;
+}
+
+.social__icon {
+  
+}
