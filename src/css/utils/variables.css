@@ -1,0 +1,14 @@
+/* Variable collection */
+:root {
+  /* Mode 1 */
+  /* color */
+  --color: #17494e;
+  --color-2: #ffffff;
+  --color-3: #ffddf2;
+  --color-5: #9dbc65;
+  /* number */
+  --number: 0.625rem;
+  /* string */
+  --string: Lilita One;
+  --string-2: Orelega One;
+}
