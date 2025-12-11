@@ -1,15 +1,30 @@
 .footer {
-  background-color: #111111;   /* fond noir/gris très sombre comme sur la maquette */
+  background-color: #111111;   
   color: #ffffff;
-  
-  max-width: 1200px;           /* même largeur que ton header */
+  max-width: 1200px;           
   width: 100%;
-  margin: 0 auto;              /* centre le bloc dans la page */
-
-  padding: 40px 40px 60px;     /* marges internes pour aérer le contenu */
+  margin: 0 auto;              
+  padding: 40px 40px 60px 27px;    
   display: flex;
-  flex-direction: column;      /* tout est empilé verticalement */
-  gap: 24px;                   /* espace entre les blocs (menu, contact, réseaux…) */
-  font-family: "Lilita One", sans-serif; /* ou la même police que ton site */
+  flex-direction: column;      
+  gap: 24px;                  
 }
+
+.footer__list {
+  list-style: none;       /* enlève les points */
+  margin: 0;
+  padding-left: 0px;     /* texte à 27px du bord gauche du footer */
+}
+
+/* Les liens de menu */
+.texte__footer {
+  display: block;
+  font-family: "Lilita One" !important;
+  font-size: 14px;                       /* ajuste si besoin */
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;                 /* enlève le soulignement */
+  margin-bottom: 4px;                    /* petit espace entre chaque ligne */
+}
+
 
