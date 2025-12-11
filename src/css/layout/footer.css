@@ -1,3 +1,15 @@
 .footer {
-    
+  background-color: #111111;   /* fond noir/gris très sombre comme sur la maquette */
+  color: #ffffff;
+  
+  max-width: 1200px;           /* même largeur que ton header */
+  width: 100%;
+  margin: 0 auto;              /* centre le bloc dans la page */
+
+  padding: 40px 40px 60px;     /* marges internes pour aérer le contenu */
+  display: flex;
+  flex-direction: column;      /* tout est empilé verticalement */
+  gap: 24px;                   /* espace entre les blocs (menu, contact, réseaux…) */
+  font-family: "Lilita One", sans-serif; /* ou la même police que ton site */
 }
+
