@@ -11,6 +11,8 @@
   --number: 0.625rem;
   --number-2: 1.625rem;
   /* string */
-  --string: Lilita One;
-  --string-2: Orelega One;
+  --string-police: 'Lilita One';
+  --string-2: 'Orelega One';
+  /*tailles police*/
+  --text-body: 0.875rem;
 }

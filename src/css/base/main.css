@@ -1,0 +1,16 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary-color, #17494e);
+    font-family: var(--string-police);
+    font-size: var(--text-body);
+    line-height: 1.4;
+    letter-spacing: -0.03rem;
+    color: var(--text-color, #ffffff);
+    padding-left: 10px;   /* marge intérieure à gauche */
+    padding-right: 10px; 
+}
