@@ -1,3 +1,48 @@
 .header {
-    
+    background-color: #17494e;
+    display: flex;
+    justify-content: space-between; /* Logo à gauche, icône à droite */
+    align-items: center; /* Alignement vertical centré */
+    height: 100px; /* Hauteur fixe pour l'exemple, ou utiliser padding pour la flexibilité */
+    width: 100%;
+    max-width: 1200px;   /* largeur max du header */
+}
+
+/* 3. Style du logo "SavouFest'" */
+.header__logo {
+    font-family: "Lilita One";
+    color : #ffddf2
+    font-size 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 29px;  
+    margin-bottom: 27.75px; 
+    margin-left: 29px;       
+    font-weight: 700;
+    width: 113px;
+    height: 28.331px;
+}
+
+/* 4. Style de l'icône de menu (Hamburger) */
+.header__menu-button {
+    width: 40px; /* Largeur totale de l'icône */
+    height: 30px; /* Hauteur totale de l'icône */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Espacement uniforme entre les barres */
+    cursor: pointer;
+
+    margin-top: 38px;         /* distance avec le haut du header */
+    margin-right: 31px;       /* distance avec le bord droit */
+    margin-bottom: 33px;      /* distance avec le bas */
+    margin-left: 0;
+}
+
+.menu-button__bar {
+    display: block;
+    width: 100%;
+    height: 6px; /* Épaisseur de la barre */
+    background-color: #A5D66A;
+    border-radius: 3px; /* Bords arrondis comme sur la maquette */
 }
