@@ -5,8 +5,9 @@
 @import "utils/variables.css";
 
 /* Base */
-@import "base/main.css";
 @import "base/media.css";
+@import "base/main.css";
+
 
 /* Layout */
 @import "layout/header.css";

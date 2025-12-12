@@ -265,13 +265,37 @@ main{max-width:360px;margin:0;padding:0}
 }
 
 .section__festival{
-  color:#ffffff;
-  padding:0 12px 60px 12px;
+  width: 100vw; /* vw = viewport width. 100vw = 100% de la largeur de la fenêtre */
+  padding: 0; /* Supprime tout espace intérieur qui pourrait limiter l'image */
+  box-sizing: border-box; /* S'assure que le padding et les bordures sont inclus dans la largeur */
+}
+.festival__titre-histoire{
+padding: 0 12px 0 12px;
+color: #ffddf2;
+}
+.festival__texte-histoire{
+  padding: 0 12px 0 12px;
 }
 
-.festival__titre-histoire,
-.festival__titre-equipe,
-.festival__titre,
+.festival__titre-equipe{
+  padding: 0 12px 0 12px;
+  color: #ffddf2;
+}
+.festival__texte-equipe{
+  padding: 0 12px 0 12px;
+}
+
+.festival__titre{
+  padding: 0 12px 0 12px;
+}
+.valeur__titre{
+  padding: 0 12px 0 12px;
+  color: #ffddf2;
+}
+.valeur__texte{
+  padding: 0 12px 0 12px;
+}
+
 .festival__titre-thématique{
   color:#ffddf2;
   font-weight:900;
@@ -300,22 +324,67 @@ main{max-width:360px;margin:0;padding:0}
   font-weight:900;
   font-size:0.95rem;
   text-transform:uppercase;
-  margin:0 0 10px 0;
-  padding:0;
+  padding: 0 12px 0 12px;
 }
 
 .valeur__img{
-  display:block;
-  margin:0 0 10px 0;
-  padding:0;
+  width: 100%;
+height: auto;
+display: block;
 }
 
 .valeur__texte{
   color:#ffffff;
   font-size:0.9rem;
   line-height:1.4;
-  margin:0;
-  padding:0;
+  padding: 0 12px 0 12px
+}
+.festival__titre-thématique{
+  padding: 0 12px 0 12px;
+  color: #ffddf2;
+}
+.festival__texte-thématique{
+  padding: 0 12px 0 12px;
+}
+.festival__texte-equipe{
+  padding: 0 12px 0 12px;
+}
+.festival__texte-histoire{
+  padding: 0 12px 0 12px;
+}
+.titre__programmation{
+  padding: 0 12px 0 12px;
+}
+.texte__programmation{
+  padding: 0 12px 0 12px;
 }
 
-
+.img__scene{
+  width: 393px;
+  height: auto;
+}
+.img__scenes2{
+  width: 393px;
+  height: auto;
+}
+.titre__scenes1{
+  padding: 0 12px 0 12px;
+}
+.titre2__scenes1{
+  padding: 0 12px 0 12px;
+}
+.titre3__scenes1{
+  padding: 0 12px 0 12px;
+}
+.info__titre-scene{
+  padding: 0 12px 0 12px;
+}
+.titre__scenes2{
+  padding: 0 12px 0 12px;
+}
+.titre3__scenes2{
+  padding: 0 12px 0 12px;
+}
+.info__titre-scene{
+  padding: 0 12px 0 12px;
+}
