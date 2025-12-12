@@ -73,3 +73,37 @@ document.addEventListener('DOMContentLoaded', function(){
     setTimeout(update, 50);
   });
 });
+
+const btnHaut = document.getElementById('btn-retour-haut');
+
+if (btnHaut) {
+  // Seuil (px) après lequel le bouton apparaît
+  const SHOW_AFTER = 250;
+
+  // Gestionnaire de scroll : affiche/masque le bouton selon la position
+  const onScroll = () => {
+    const shouldShow = window.scrollY > SHOW_AFTER;
+    btnHaut.classList.toggle('visible', shouldShow);
+    btnHaut.setAttribute('aria-hidden', String(!shouldShow));
+  };
+
+  // Utilise un écouteur passive pour de meilleures perf lors du scroll
+  window.addEventListener('scroll', onScroll, { passive: true });
+  // état initial
+  onScroll();
+
+  // Clic : remonter en haut en douceur
+  btnHaut.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    btnHaut.blur();
+  });
+
+  // Support clavier explicite (Enter / Space)
+  btnHaut.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      btnHaut.click();
+    }
+  });
+}

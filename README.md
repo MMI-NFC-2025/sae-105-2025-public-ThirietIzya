@@ -119,7 +119,7 @@ Date:   Tue Dec 9 15:05:35 2025 +0100
     sae
 ```
 
-pages ou se trouvent mon menu : 
+pages ou se trouvent mon menu animé: 
 url : http://127.0.0.1:5501/404.html
 http://127.0.0.1:5501/artiste.html
 http://127.0.0.1:5501/contact.html
@@ -135,4 +135,14 @@ pages ou se trouvent mes carrousel :
 url : http://127.0.0.1:5501/template1.html
 http://127.0.0.1:5501/template2.html
 
+pages ou se trouvent ma fleche pour remonter la page en bas du footer : 
+url : http://127.0.0.1:5501/artiste.html
+http://127.0.0.1:5501/contact.html
+http://127.0.0.1:5501/festival.html
+http://127.0.0.1:5501/index.html
+http://127.0.0.1:5501/infos.html
+http://127.0.0.1:5501/programmation.html
+http://127.0.0.1:5501/scene.html
+http://127.0.0.1:5501/template1.html
+http://127.0.0.1:5501/template2.html
 
