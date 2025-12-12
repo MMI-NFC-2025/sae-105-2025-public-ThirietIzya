@@ -51,7 +51,7 @@
 }
 
 .menu__item {
-  margin-bottom: 1.25rem; /* espace entre les items du menu */
+  margin-bottom: 1.25rem; 
 }
 
 .menu__img {
@@ -79,9 +79,6 @@
 }
 
 
-/* ==========================================================================
-   ÉTAT MASQUÉ DU MENU
-   ========================================================================== */
 
 .menu[hidden] {
   pointer-events: none;
@@ -105,10 +102,6 @@
 }
 
 
-/* ==========================================================================
-   BOUTON HAMBURGER (DANS LE HEADER)
-   ========================================================================== */
-
 .header__menu-button {
   position: relative;
   width: 40px;
@@ -119,11 +112,10 @@
   background: none;
   border: none;
   cursor: pointer;
-  /* MODIFIÉ : z-index encore plus élevé pour être sûr qu'il est AU-DESSUS du menu ouvert */
   z-index: 1000; 
 }
 
-/* --- Style de base pour les 3 barres --- */
+
 .menu-button__bar {
   position: absolute;
   left: 0;
@@ -134,7 +126,7 @@
   transition: all 0.3s ease-in-out;
 }
 
-/* --- Position initiale des 3 barres --- */
+
 .menu-button__bar--top {
   top: 4px;
 }
@@ -148,7 +140,6 @@
   bottom: 4px;
 }
 
-/* --- Animation en croix quand le menu est ouvert --- */
 
 .header__menu-button[aria-expanded="true"] .menu-button__bar--top {
   opacity: 0;
