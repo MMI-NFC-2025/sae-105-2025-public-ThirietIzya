@@ -380,6 +380,78 @@ display: block;
 .info__titre-scene{
   padding: 0 12px 0 12px;
 }
+
+/* ===== Template1 page styles (template1.html) ===== */
+.section__template1{
+  padding:18px 12px 60px;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  color:#ffffff;
+}
+.template1__title{
+  margin:0;
+  color:#ffffff;
+  font-size:0.75rem;
+  font-weight:800;
+  text-transform:uppercase;
+}
+.template1__title2{
+  margin:0;
+  color:#ffffff;
+  font-size:1.05rem;
+  font-weight:900;
+  letter-spacing:0.6px;
+}
+.template1__text{
+  margin:0;
+  color:#ffddf2;
+  font-size:0.85rem;
+  font-weight:700;
+}
+.template1__img{
+  display:block;
+  width:100%;
+  height:auto;
+  object-fit:cover;
+  border-radius:6px;
+}
+.template1__text2{
+  background: var(--primary-color, #17494e);
+  color:#ffffff;
+  border-radius:8px;
+  font-size:0.92rem;
+  line-height:1.5;
+}
+.template1__title{
+  color: #ffddf2;
+  font-size: 1.25rem;
+}
+
+.template1__separator{display:flex;justify-content:center;align-items:center;padding:6px 0}
+.template1__img2{width:28px;height:auto;display:block}
+.template1__img3,.template1__img4,.template1__img5{
+  width:calc((100% - 16px)/3);
+  height:160px;
+  object-fit:cover;
+  display:inline-block;
+  vertical-align:middle;
+}
+.template1__img3{margin-right:8px}
+.template1__img4{margin-right:8px}
+
+@media (min-width:480px){
+  .section__template1{padding:20px}
+  .template1__title2{font-size:1.2rem}
+  .template1__img3,.template1__img4,.template1__img5{height:200px}
+}
+
+@media (min-width:900px){
+  .section__template1{max-width:720px;margin:0 auto;padding:24px}
+  .template1__title{font-size:0.9rem}
+  .template1__title2{font-size:1.6rem}
+  .template1__img3,.template1__img4,.template1__img5{height:260px}
+}
 .titre__scenes2{
   padding: 0 12px 0 12px;
 }
@@ -458,4 +530,106 @@ display: block;
 }
 .titre__scenes1{
   color: #ffddf2;
+}
+.section__template1{
+  width: 393px;
+  margin-right: 12px;
+}
+/* ===== Template1 page styles (template1.html) ===== */
+.section__template2{
+  padding:18px 12px 60px;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  color:#ffffff;
+}
+.template2__title{
+  margin:0;
+  color:#ffffff;
+  font-size:0.75rem;
+  font-weight:800;
+  text-transform:uppercase;
+}
+.template2__title2{
+  margin:0;
+  color:#ffffff;
+  font-size:1.05rem;
+  font-weight:900;
+  letter-spacing:0.6px;
+}
+.template2__text{
+  margin:0;
+  color:#ffddf2;
+  font-size:0.85rem;
+  font-weight:700;
+}
+.template2__img{
+  display:block;
+  width:100%;
+  height:auto;
+  object-fit:cover;
+  border-radius:6px;
+}
+.template2__text2{
+  background: var(--primary-color, #17494e);
+  color:#ffffff;
+  border-radius:8px;
+  font-size:0.92rem;
+  line-height:1.5;
+}
+.template2__title{
+  color: #ffddf2;
+  font-size: 1.25rem;
+}
+
+.template2__separator{display:flex;justify-content:center;align-items:center;padding:6px 0}
+.template2__img2{width:28px;height:auto;display:block}
+.template2__img3,.template2__img4,.template2__img5{
+  width:calc((100% - 16px)/3);
+  height:160px;
+  object-fit:cover;
+  display:inline-block;
+  vertical-align:middle;
+}
+.template2__img3{margin-right:8px}
+.template2__img4{margin-right:8px}
+
+/* Carousel for template1 (images overflow / dépassement) */
+.carousel-container{overflow:hidden;width:100%;position:relative}
+.carousel{position:relative;display:flex;align-items:center;gap:8px}
+.carousel__track{display:flex;gap:8px;transition:transform .45s cubic-bezier(.2,.9,.2,1);will-change:transform}
+.carousel__slide{flex:0 0 320px;max-width:320px}
+.carousel__slide img{display:block;width:100%;height:180px;object-fit:cover;border-radius:6px}
+.carousel__btn{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,0.6);color:#fff;border:0;padding:10px 12px;border-radius:50%;cursor:pointer;z-index:10;font-size:1.5rem;font-weight:bold;transition:all 0.2s ease;pointer-events:auto}
+.carousel__btn:hover{background:rgba(0,0,0,0.8);transform:translateY(-50%) scale(1.1)}
+.carousel__btn--prev{left:8px}
+.carousel__btn--next{right:8px}
+
+
+
+/* make slides larger on wider screens and adjust overflow feel */
+@media (min-width:480px){
+  .carousel__slide{flex:0 0 360px;max-width:360px}
+  .carousel__slide img{height:200px}
+  .carousel__btn--prev{left:12px}
+  .carousel__btn--next{right:12px}
+}
+@media (min-width:900px){
+  .carousel__slide{flex:0 0 420px;max-width:420px}
+  .carousel__slide img{height:260px}
+  .carousel__btn--prev{left:16px}
+  .carousel__btn--next{right:16px}
+}
+
+@media (min-width:480px){
+  .section__template2{padding:20px}
+  .template2__title2{font-size:1.2rem}
+  .template2__img3,.template2__img4,.template2__img5{height:200px}
+}
+
+@media (min-width:900px){
+  .section__template2{max-width:720px;margin:0 auto;padding:24px}
+  .template2__title{font-size:0.9rem}
+  .template2__title2{font-size:1.6rem}
+  .template2__img3,.template2__img4,.template2__img5{height:260px}
 }
