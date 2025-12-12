@@ -20,6 +20,9 @@
   opacity: 1;
   transition: visibility 0s, opacity 0.4s ease;
 }
+.menu__link{
+  font-family: var(--string-police);
+}
 
 /* --- Overlay (fond sombre) --- */
 .menu::before {
@@ -48,7 +51,7 @@
 }
 
 .menu__item {
-  margin-bottom: var(--space-lg);
+  margin-bottom: 1.25rem; /* espace entre les items du menu */
 }
 
 .menu__img {
@@ -58,7 +61,11 @@
 .menu__link {
   color: var(--light);
   text-decoration: none;
-  font-size: var(--text-2xl);
+  font-size: 1.9rem;
+  font-weight: 800;
+  line-height: 1.15;
+  display: block;
+  padding: 8px 0;
 }
 
 .menu__social-list {
@@ -156,5 +163,15 @@
 .header__menu-button[aria-expanded="true"] .menu-button__bar--bottom {
   transform: rotate(-45deg);
   background: var(--light);
+}
+
+@media (min-width:480px){
+  .menu__link{font-size:2.25rem}
+  .menu__item{margin-bottom:1.5rem}
+}
+
+@media (min-width:900px){
+  .menu__link{font-size:2.5rem}
+  .menu__item{margin-bottom:1.75rem}
 }
 

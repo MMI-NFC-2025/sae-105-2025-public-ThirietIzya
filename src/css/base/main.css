@@ -431,3 +431,18 @@ display: block;
 .artistes__liste{
   font-family: var(--string-police);
 }
+.section__billets-infos{
+  margin: 0 0 12px 12px;
+}
+.section__hebergement-infos{
+  margin: 0 0 12px 12px;
+}
+.titres-infos__titre1{
+  color: #ffddf2;
+}
+.titres-infos__titre2{
+  color: #ffffff;
+}
+.faq__infos{
+  color: #ffddf2;
+}
