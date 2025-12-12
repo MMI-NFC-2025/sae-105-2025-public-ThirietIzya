@@ -110,6 +110,7 @@ body {
   font-weight: bold;
   text-decoration: none;
   padding: 0.6rem 2rem;
+  margin: 12px;
   border-radius: 20px;
   font-size: 0.9rem;
 }
@@ -444,5 +445,17 @@ display: block;
   color: #ffffff;
 }
 .faq__infos{
+  color: #ffddf2;
+}
+.section__info{
+  color: #ffddf2;
+}
+.section__partenaires{
+  color: #ffddf2;
+}
+.section__scene{
+  color: #ffddf2;
+}
+.titre__scenes1{
   color: #ffddf2;
 }
