@@ -27,7 +27,12 @@ footer {
   text-decoration: none;
   margin-bottom: 4px;
 }
-
+.texte2__footer{
+  font-family: var(--string-police);
+}
+.texte3__footer{
+  font-family: var(--string-police);
+}
 .titre__footer {
   font-family: var(--string-2);
   color: #7b7371;

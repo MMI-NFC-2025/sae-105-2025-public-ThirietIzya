@@ -105,7 +105,7 @@ body {
   border-radius: 20px;
 }
  .info__programmation-date {
-  background-color: #f8d7e6;
+ background-color: #f8d7e6;
   color: #17494e;
   font-weight: bold;
   text-decoration: none;
@@ -418,4 +418,16 @@ display: block;
 @media (min-width:480px){
   .section__billets-infos,.section__hebergement-infos{padding:16px}
   .section__venir-infos{flex-direction:row;gap:12px}
+}
+.programmation__button{
+  margin-bottom: 10px;
+}
+.section__formulaire-contact{
+  font-family: var(--string-2);
+}
+.section__artistes-titre{
+ font-family: var(--string-police);
+}
+.artistes__liste{
+  font-family: var(--string-police);
 }
