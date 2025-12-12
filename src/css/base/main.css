@@ -50,3 +50,17 @@ body {
   padding: 15px 40px;
   border-radius: 20px;
 }
+
+.info__date {
+  background-color: #f8d7e6;
+  color: #17494e;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.6rem 2rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.info__nom {
+    list-style: none;
+}
