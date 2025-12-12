@@ -1,0 +1,194 @@
+/* ==========================================================================
+   MENU PLEINE PAGE (FULLSCREEN)
+   ========================================================================== */
+
+/* --- Conteneur principal du menu --- */
+.menu {
+  position: fixed;
+  inset: 0;
+  /* MODIFIÉ : z-index très élevé pour être sûr qu'il est au-dessus de tout */
+  z-index: 999; 
+  
+  color: var(--light);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5xl);
+  padding: var(--space-4xl);
+  
+  pointer-events: auto;
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s, opacity 0.4s ease;
+}
+
+/* --- Overlay (fond sombre) --- */
+.menu::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  /* MODIFIÉ : z-index négatif par rapport à .menu, mais l'ensemble est maintenant à 999 */
+  z-index: -1; 
+  background-color: #17494e; /* Assurez-vous que cette variable contient bien une couleur comme #111 ou rgba(0,0,0,0.9) */
+  transform: translateY(0);
+  transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* --- Contenu du menu (liens, images, etc.) --- */
+.menu__list,
+.menu__social-list,
+.menu__img {
+  position: relative;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s ease-in-out 0.1s, transform 0.3s ease-in-out 0.1s;
+}
+
+.menu__list {
+  margin-top: 6rem;
+}
+
+.menu__item {
+  margin-bottom: var(--space-lg);
+}
+
+.menu__img {
+  border-radius: var(--space-md);
+}
+
+.menu__link {
+  color: var(--light);
+  text-decoration: none;
+  font-size: var(--text-2xl);
+}
+
+.menu__social-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.menu__social-link {
+  color: var(--gray-500);
+  text-decoration: none;
+}
+
+
+/* ==========================================================================
+   ÉTAT MASQUÉ DU MENU
+   ========================================================================== */
+
+.menu[hidden] {
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 0.4s, opacity 0.4s ease;
+}
+
+.menu[hidden]::before {
+  transform: translateY(-100%);
+  transition-delay: 0s;
+}
+
+.menu[hidden] .menu__list,
+.menu[hidden] .menu__social-list,
+.menu[hidden] .menu__img {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  transition-delay: 0s;
+}
+
+
+/* ==========================================================================
+   BOUTON HAMBURGER (DANS LE HEADER)
+   ========================================================================== */
+
+.header__menu-button {
+  position: relative;
+  width: 40px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  /* MODIFIÉ : z-index encore plus élevé pour être sûr qu'il est AU-DESSUS du menu ouvert */
+  z-index: 1000; 
+}
+
+/* --- Style de base pour les 3 barres --- */
+.menu-button__bar {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background: #a5d66a;
+  transition: all 0.3s ease-in-out;
+}
+
+/* --- Position initiale des 3 barres --- */
+.menu-button__bar--top {
+  top: 4px;
+}
+
+.menu-button__bar--middle {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.menu-button__bar--bottom {
+  bottom: 4px;
+}
+
+/* --- Animation en croix quand le menu est ouvert --- */
+
+.header__menu-button[aria-expanded="true"] .menu-button__bar--top {
+  opacity: 0;
+  transform: translateY(11px);
+}
+
+.header__menu-button[aria-expanded="true"] .menu-button__bar--middle {
+  transform: rotate(45deg);
+  background: var(--light);
+}
+
+.header__menu-button[aria-expanded="true"] .menu-button__bar--bottom {
+  transform: rotate(-45deg);
+  background: var(--light);
+}
+.header__logo-link {
+  /* Positionnement et z-index pour qu'il puisse être placé au-dessus des autres éléments */
+  position: relative; 
+  z-index: 10; /* Par défaut, il est sous le bouton du menu mais au-dessus du reste de la page */
+  display: block; /* Assure un bon comportement du lien */
+}
+
+/* --- L'image du logo elle-même --- */
+.header__logo {
+  height: 40px; /* Ajustez la taille de votre logo */
+  width: auto;
+  display: block; /* Empêche les espaces indésirables sous l'image */
+  transition: filter 0.3s ease-in-out; /* Animation douce pour le changement de couleur */
+}
+
+
+/* ==========================================================================
+   LOGO QUAND LE MENU EST OUVERT (LA PARTIE IMPORTANTE)
+   ========================================================================== */
+
+/* On cible le header lorsque le menu est ouvert (via l'état du bouton) */
+.header:has(.header__menu-button[aria-expanded="true"]) .header__logo-link {
+  /* On s'assure que le logo passe au-dessus du fond du menu */
+  z-index: 1000; 
+}
+
+.header:has(.header__menu-button[aria-expanded="true"]) .header__logo {
+  /*
+   * Cette astuce CSS inverse les couleurs de votre logo.
+   * Si votre logo est noir, il deviendra blanc.
+   * Si votre logo est blanc, il deviendra noir.
+   * C'est parfait pour le faire ressortir sur le fond sombre du menu.
+   */
+  filter: invert(1);
+}

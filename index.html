@@ -10,7 +10,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Chango&family=Lilita+One&family=Pacifico&family=Racing+Sans+One&family=Stack+Sans+Notch:wght@200..700&display=swap" rel="stylesheet">
-        <script src="src/js/script.js"></script>
+        <script type="module" src="/src/js/script.js"></script>
     </head>
     <body>
         <header class="header">
@@ -24,15 +24,9 @@
                 aria-label="menu"
                 aria-expanded="false"
                 aria-controls="mainNav">
-                <span 
-                class="menu-button__bar"
-                aria-hidden="true"></span>
-                <span
-                class="menu-button__bar"
-                aria-hidden="true"></span>
-                <span
-                class="menu-button__bar"
-                aria-hidden="true"></span>
+                <span class="menu-button__bar menu-button__bar--top" aria-hidden="true"></span>
+                <span class="menu-button__bar menu-button__bar--bottom" aria-hidden="true"></span>
+                <span class="menu-button__bar menu-button__bar--light" aria-hidden="true"></span>
             </button>
 
             <nav class="header__menu menu" id="mainNav" hidden>
@@ -137,11 +131,11 @@
                     NOS SCENES
                 </h2>
                 <p class="section__lascene">
-                    Scène 1 : La Savoureuse
+                    Scène 1 : La Savoureuse <br>
                     A droite de l’entrée du festival
                 </p>
                 <p class="section__lascene">
-                    Scène 2 : Le Martin-pêcheur
+                    Scène 2 : Le Martin-pêcheur <br>
                     Au fond à gauche du site
                 </p>
             </section>
