@@ -388,3 +388,34 @@ display: block;
 .info__titre-scene{
   padding: 0 12px 0 12px;
 }
+/* ===== Infos page styles (infos.html) ===== */
+.section__titres-infos{padding:18px 12px 8px}
+.titres-infos__titre1{color:#ffffff;font-size:1.25rem;font-weight:900;margin:0 0 6px;text-transform:uppercase}
+.titres-infos__titre2{color:#ffddf2;font-size:0.95rem;font-weight:800;margin:0 0 10px}
+
+.section__billets-infos{background:#ffffff;color:#0b3b37;border-radius:10px;padding:14px;margin:0 0 14px 0}
+.billets-infos__titre{margin:0;font-weight:900;font-size:1rem;text-transform:uppercase}
+.billets-infos__texte{margin:6px 0;color:#4b4b4b;font-size:0.9rem}
+.billets-infos__prix{margin:6px 0;font-weight:900;font-size:1.1rem}
+.billets-infos__bouton-container{display:flex;justify-content:flex-end}
+.billets-infos__bouton-achat{background:#f8d7e6;color:#17494e;padding:8px 14px;border-radius:10px;text-decoration:none;font-weight:800}
+
+.section__hebergement-infos{background:#ffffff;color:#0b3b37;border-radius:10px;padding:14px;margin:0 0 14px 0}
+.hebergement-infos__titre{margin:0;font-weight:900;font-size:1rem;text-transform:uppercase}
+.hebergement-infos__texte{margin:6px 0;color:#4b4b4b;font-size:0.9rem}
+.hebergement-infos__prix{margin:6px 0;font-weight:900;font-size:1.05rem}
+.hebergement-infos__bouton-container{display:flex;justify-content:flex-end}
+.hebergement-infos__bouton-reservation{background:#f8d7e6;color:#17494e;padding:8px 14px;border-radius:10px;text-decoration:none;font-weight:800}
+
+.section__venir-infos{display:flex;flex-direction:column;gap:12px;padding:0 12px 18px}
+.venir-infos__texte{margin:0;color:#ffffff;background:transparent;font-size:0.95rem}
+
+.section__faq-infos{padding:12px}
+.faq__infos{background:#ffffff;border-radius:10px;padding:12px;margin:0 0 12px 0}
+.faq__infos-titre{margin:0;font-weight:900;color:#0b3b37}
+.faq-infos__texte{margin:8px 0;color:#ffffff}
+
+@media (min-width:480px){
+  .section__billets-infos,.section__hebergement-infos{padding:16px}
+  .section__venir-infos{flex-direction:row;gap:12px}
+}
