@@ -1,0 +1,10 @@
+img,
+picture {
+  display: block; /* Supprime l'espace sous l'image (inline) */
+  max-width: 100%; /* Ne dépasse jamais son conteneur */
+  height: auto; /* Garde les proportions */
+}
+
+figure {
+  margin: 0;
+}
