@@ -157,38 +157,4 @@
   transform: rotate(-45deg);
   background: var(--light);
 }
-.header__logo-link {
-  /* Positionnement et z-index pour qu'il puisse être placé au-dessus des autres éléments */
-  position: relative; 
-  z-index: 10; /* Par défaut, il est sous le bouton du menu mais au-dessus du reste de la page */
-  display: block; /* Assure un bon comportement du lien */
-}
 
-/* --- L'image du logo elle-même --- */
-.header__logo {
-  height: 40px; /* Ajustez la taille de votre logo */
-  width: auto;
-  display: block; /* Empêche les espaces indésirables sous l'image */
-  transition: filter 0.3s ease-in-out; /* Animation douce pour le changement de couleur */
-}
-
-
-/* ==========================================================================
-   LOGO QUAND LE MENU EST OUVERT (LA PARTIE IMPORTANTE)
-   ========================================================================== */
-
-/* On cible le header lorsque le menu est ouvert (via l'état du bouton) */
-.header:has(.header__menu-button[aria-expanded="true"]) .header__logo-link {
-  /* On s'assure que le logo passe au-dessus du fond du menu */
-  z-index: 1000; 
-}
-
-.header:has(.header__menu-button[aria-expanded="true"]) .header__logo {
-  /*
-   * Cette astuce CSS inverse les couleurs de votre logo.
-   * Si votre logo est noir, il deviendra blanc.
-   * Si votre logo est blanc, il deviendra noir.
-   * C'est parfait pour le faire ressortir sur le fond sombre du menu.
-   */
-  filter: invert(1);
-}
