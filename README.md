@@ -6,7 +6,7 @@
 - NOM :Thiriet
 - PRÉNOM :Izya
 - GROUPE :C2
-- URL du site :
+- URL du site : https://savoufest25-thiriet.netlify.app/
 - URL FIGMA :https://www.figma.com/design/RAGJ6TJ57lOPEqripgMyzK/maquette-SAE-105-SavouFest-?node-id=0-1&t=cUoXNoo1vNGTPIQ9-1 
 
 ## Sujet
@@ -146,3 +146,6 @@ http://127.0.0.1:5501/scene.html
 http://127.0.0.1:5501/template1.html
 http://127.0.0.1:5501/template2.html
 
+impossible d'avoir mon nom de domaine gratuitement malgré le compte étudiant :
+https://manager.infomaniak.com/v3/1556344/ng/products/web/domains
+https://shop.infomaniak.com/order2/payment
