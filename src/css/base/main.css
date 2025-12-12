@@ -11,7 +11,7 @@ body {
     line-height: 1.4;
     letter-spacing: -0.03rem;
     color: var(--text-color, #ffffff);
-    padding-left: 10px;   /* marge intérieure à gauche */
+    padding-left: 10px;
     padding-right: 10px; 
 }
 
@@ -69,4 +69,27 @@ h2 {
     color:#ffddf2;
 }
 
-
+.titre__programmation {
+  color: #ffddf2;
+}
+.texte__programmation {
+  font-family: var(--string-2);
+}
+.programmation__button {
+  background-color: #f8d7e6;
+  color: #17494e;           
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 2px 2px;
+  border-radius: 20px;
+}
+ .info__programmation-date {
+  background-color: #f8d7e6;
+  color: #17494e;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.6rem 2rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}

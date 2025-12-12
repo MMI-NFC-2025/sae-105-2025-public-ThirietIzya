@@ -1,7 +1,6 @@
 footer {
-  /* --- Section pour l'extension sur toute la largeur --- */
-  width: 100vw; /* Prend 100% de la largeur de la fenêtre */
-  box-sizing: border-box; /* Assure que le padding est inclus dans la largeur totale */
+  width: 100vw; 
+  box-sizing: border-box; 
   position: relative;
   left: 50%;
   transform: translateX(-50%);
@@ -11,14 +10,8 @@ footer {
   display: flex;
   flex-direction: column;      
   gap: 24px;
-
-  /* --- Suppression des propriétés en conflit --- */
-  /* max-width: 1200px; */  /* SUPPRIMÉ : C'est ce qui limitait la largeur */
-  /* width: 100%; */       /* SUPPRIMÉ : Redondant et en conflit avec 100vw */
-  /* margin: 0; */         /* SUPPRIMÉ : Le centrage gère déjà le positionnement */
 }
 
-/* Le reste de votre code reste inchangé */
 .footer__list {
   list-style: none;
   margin: 0;
