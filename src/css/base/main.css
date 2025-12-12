@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+h2 {
+  margin: 18px 0 10px 0;
+  padding: 0;
+}
+
 body {
     background-color: var(--primary-color, #17494e);
     font-family: var(--string-police);
@@ -58,13 +63,30 @@ body {
   border-radius: 20px;
   font-size: 0.9rem;
 }
+.info__programme {
+  width: 100vw; /* vw = viewport width. 100vw = 100% de la largeur de la fenêtre */
+  padding: 0; /* Supprime tout espace intérieur qui pourrait limiter l'image */
+  box-sizing: border-box; /* S'assure que le padding et les bordures sont inclus dans la largeur */
+}
 
 .info__nom {
     list-style: none;
 }
 
-h2 {
+.info__img {
+  width: 100%; /* Force l'élément à prendre toute la largeur de son parent */
+  max-width: none; /* Annule toute restriction de largeur maximale */
+}
+
+.info__intro {
     color:#ffddf2;
+    margin: 10px;
+}
+.info__date {
+  margin: 10px;
+}
+.section__infos {
+  margin: 10px;
 }
 
 .titre__programmation {
@@ -227,6 +249,73 @@ main{max-width:360px;margin:0;padding:0}
 
 @media (min-width:480px){
   .section__contact{max-width:420px}
+}
+
+/* ===== Festival page styles ===== */
+.hero{
+  width:393px;
+  margin:0;
+  padding:0;
+}
+.img__hero{
+  display:block;
+  margin:0;
+  padding:0;
+  width: 393px;
+}
+
+.section__festival{
+  color:#ffffff;
+  padding:0 12px 60px 12px;
+}
+
+.festival__titre-histoire,
+.festival__titre-equipe,
+.festival__titre,
+.festival__titre-thématique{
+  color:#ffddf2;
+  font-weight:900;
+  font-size:1rem;
+  text-transform:uppercase;
+  margin:18px 0 10px 0;
+  padding:0;
+}
+
+.festival__texte-histoire,
+.festival__texte-equipe,
+.festival__texte-thématique{
+  color:#ffffff;
+  font-size:0.9rem;
+  line-height:1.4;
+  margin:0 0 14px 0;
+  padding:0;
+}
+
+.festival__valeur{
+  margin:0 0 18px 0;
+}
+
+.valeur__titre{
+  color:#ffddf2;
+  font-weight:900;
+  font-size:0.95rem;
+  text-transform:uppercase;
+  margin:0 0 10px 0;
+  padding:0;
+}
+
+.valeur__img{
+  display:block;
+  margin:0 0 10px 0;
+  padding:0;
+}
+
+.valeur__texte{
+  color:#ffffff;
+  font-size:0.9rem;
+  line-height:1.4;
+  margin:0;
+  padding:0;
 }
 
 
